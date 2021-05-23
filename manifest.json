@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "KMF Extension",
+  "author": "Holy",
+  "description": "一個 Chrome 擴充功能解除 KMF 考滿分網站一些限制更方便使用",
+  "version": "1",
+  "icons": {
+  },
+  "browser_action": {
+    "default_title": "KMF Extension"
+  },
+  "content_scripts": [{
+    "matches": ["https://*.kmf.com/*"],
+    "js": ["main.js"]
+  }]
+}
